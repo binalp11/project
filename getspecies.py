@@ -9,21 +9,21 @@ import re
 
 
 def getspecies():
-
+    #open a new text file to save the output to
+    nameslist  = open('names_list.txt', 'w')
     #get soup from the saved page
     soup = BeautifulSoup(open('species.html'))
     #find form section of soup
     form_pane = soup.find("form")
     #find all the option sections which hold the species
     species_names = form_pane.find_all("option")
-    #use regex to get just the name of the species
-    all_names = re.sub(r'<option>(.*?)</option>,', r'\1\n', str(species_names))
-    #open a new text file to save the output to
-    names  = open('names_list.txt', 'w')
-    #write output to file
-    names.write(all_names)
-    #close the file
-    names.close()
-    print "The species list has been created"
+    #get species string from species name 
+    for species in species_names:
+        #save species from
+        all_names =  species.string + '\n'
+        #write output to file
+        nameslist.write(all_names)
+        
+
 
 getspecies()
