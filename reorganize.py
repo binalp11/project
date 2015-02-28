@@ -29,3 +29,4 @@ def fix_1st_line():
     clean_data  = open('organized_data.txt', 'w')
     clean_data.write(fix_1st + '\n')
 
+fix_1st_line()
