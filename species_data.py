@@ -16,9 +16,9 @@ time.sleep(30)
 
 #print completion line
 print 'The Data has been downloaded'
-
+#get only the lines after the 6th line
 child.sendline("tail -n+6 gearlandingsdata.txt > data_w_o_header.txt")
-
+#wait 10 seconds
 time.sleep(10)
 
 print "The Header has been removed"
