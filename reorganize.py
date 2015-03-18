@@ -4,7 +4,7 @@
 import re
 
 
-#open new file to send output to
+#open new file to send output to called organized_data.txt
 clean_data  = open('organized_data.txt', 'w')
 
 #define a funciton to use regex and fix data into columns seperated by tabs
