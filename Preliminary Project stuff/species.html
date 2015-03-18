@@ -1,0 +1,830 @@
+<html>
+<head>
+<title>Commercial Landings Species Locator</title>
+</head>
+<body bgcolor="#FFFFFF">
+<div align="center"><h2>Species Locator</h2></div>
+<form method="POST"
+ action="/pls/webpls/FT_HELP.SPECIES">
+<hr width=50%  align=CENTER>
+<p>To summarize landings for an individual species the species name that is 
+entered in the query must be identical to the name in a master species 
+coding table (names are not case sensitive).  The quickest method for 
+selecting and entering a species name is to type part of the name in the 
+box to the left of the SEARCH button.  For instance, type (enter)
+"scallop" and then click on the search button or hit the ENTER key.  In 
+the lower box the name "SCALLOP, ATLANTIC CALICO" will appear.  To see 
+a complete list of all scallops, click on the down-arrow icon in this 
+box.  Scroll down the list of scallop species and pick (click on) the 
+species of your choice to highlight it.  Then click on the RETURN button 
+to select this species and return you to your landings query page.</p>
+<p>If you want to list all 715 species names, click on the SEARCH button 
+before entering a name in the top box.  "ABALONE" should appear in the 
+lower box next to the RETURN button.  Click on the down-arrow icon in the 
+box and a scrollable list of NMFS common species names will appear.  Choose 
+(click on) the species of your choice and then click on the RETURN button 
+to enter the species in your query and return to the landings query page.</p>
+<hr width=50%  align=CENTER>
+<div align="center">
+<h3>Please Type in Name or Partial Name to Search On</h3>
+<p><a href="/st1/commercial/landings/species_locator_help.html">Help</a></p>
+</div>
+<INPUT TYPE="HIDDEN" NAME="qwhocalled" VALUE="annual">
+<p><label for="qcommon">Enter common species name: </label>
+<input name="qcommon" id="qcommon" value="" size="20" maxlength="80">
+<input type="SUBMIT" name="qreturn" value="Search"></p>
+<p><label for="qselect">Pick from these results: </label>
+<select name="qselect" id="qselect">
+<option selected>ABALONE, BLACK</option>
+<option>ABALONE, FLAT</option>
+<option>ABALONE, GREEN</option>
+<option>ABALONE, PINK</option>
+<option>ABALONE, PINTO</option>
+<option>ABALONE, RED</option>
+<option>ABALONE, THREADED</option>
+<option>ABALONE, WHITE</option>
+<option>ABALONES</option>
+<option>ALEWIFE</option>
+<option>ALFONSIN</option>
+<option>ALLIGATOR, AMERICAN</option>
+<option>AMBERJACK</option>
+<option>AMBERJACK, GREATER</option>
+<option>AMBERJACK, LESSER</option>
+<option>ANCHOVIES</option>
+<option>ANCHOVY, BAY</option>
+<option>ANCHOVY, DEEPBODY</option>
+<option>ANCHOVY, NORTHERN</option>
+<option>ANCHOVY, SLOUGH</option>
+<option>ANGELFISHES</option>
+<option>ARCTIC CHAR</option>
+<option>ARGENTINES</option>
+<option>ARMORHEAD, PELAGIC</option>
+<option>ATKA MACKEREL</option>
+<option>AUSTRALIAN ROCKLING</option>
+<option>BALLYHOO</option>
+<option>BARBIER, RED</option>
+<option>BARRACUDA, PACIFIC</option>
+<option>BARRACUDAS</option>
+<option>BARRAMUNDI</option>
+<option>BARRELFISH</option>
+<option>BASS, BLACKMOUTH</option>
+<option>BASS, KELP</option>
+<option>BASS, LONGTAIL</option>
+<option>BASS, ROCK</option>
+<option>BASS, STRIPED</option>
+<option>BASS, WHITE</option>
+<option>BASS, YELLOW</option>
+<option>BEARDFISH</option>
+<option>BIGEYE</option>
+<option>BIGEYE, SHORT</option>
+<option>BILLFISHES</option>
+<option>BLACK DRIFTFISH</option>
+<option>BLACK MARGATE</option>
+<option>BLACKSMITH</option>
+<option>BLOODWORMS</option>
+<option>BLUEFISH</option>
+<option>BONEFISH</option>
+<option>BONITO, ATLANTIC</option>
+<option>BONITO, PACIFIC</option>
+<option>BONITO, STRIPED</option>
+<option>BONITOS</option>
+<option>BOWFIN</option>
+<option>BOXFISHES</option>
+<option>BROTULA, BEARDED</option>
+<option>BUFFALOFISHES</option>
+<option>BULLHEAD, BROWN</option>
+<option>BURBOT</option>
+<option>BUTTERFISH</option>
+<option>BUTTERFLYFISHES</option>
+<option>CABEZON</option>
+<option>CALIFORNIA ROACH</option>
+<option>CAPELIN</option>
+<option>CARP, COMMON</option>
+<option>CARP, GRASS</option>
+<option>CARPS AND MINNOWS</option>
+<option>CATFISH, BLUE</option>
+<option>CATFISH, CHANNEL</option>
+<option>CATFISH, FLATHEAD</option>
+<option>CATFISHES & BULLHEADS</option>
+<option>CHUBS</option>
+<option>CIGARFISH, CAPE FATHEAD</option>
+<option>CIGARFISHES</option>
+<option>CLAM, ARC, BLOOD</option>
+<option>CLAM, ARCTIC SURF (STIMPSON)</option>
+<option>CLAM, ATLANTIC JACKKNIFE</option>
+<option>CLAM, ATLANTIC RANGIA</option>
+<option>CLAM, ATLANTIC SURF</option>
+<option>CLAM, BUTTER</option>
+<option>CLAM, CALIFORNIA JACKKNIFE</option>
+<option>CLAM, MANILA</option>
+<option>CLAM, NORTHERN QUAHOG</option>
+<option>CLAM, OCEAN QUAHOG</option>
+<option>CLAM, PACIFIC GEODUCK</option>
+<option>CLAM, PACIFIC LITTLENECK</option>
+<option>CLAM, PACIFIC RAZOR</option>
+<option>CLAM, PACIFIC, GAPER</option>
+<option>CLAM, PISMO</option>
+<option>CLAM, QUAHOG</option>
+<option>CLAM, ROSY JACKKNIFE</option>
+<option>CLAM, SOFTSHELL</option>
+<option>CLAM, SUNRAY VENUS</option>
+<option>CLAM, VARIABLE COQUINA</option>
+<option>CLAMS OR BIVALVES</option>
+<option>COBIA</option>
+<option>COCKLE, NUTTALL</option>
+<option>COD, ATLANTIC</option>
+<option>COD, PACIFIC</option>
+<option>CONEY</option>
+<option>CORALS</option>
+<option>CORBINA, CALIFORNIA</option>
+<option>CORVINA, SHORTFIN</option>
+<option>CRAB, ATLANTIC ROCK</option>
+<option>CRAB, BLUE</option>
+<option>CRAB, BLUE LAND</option>
+<option>CRAB, BLUE, PEELER</option>
+<option>CRAB, BLUE, SOFT</option>
+<option>CRAB, BLUE, SOFT AND PEELER</option>
+<option>CRAB, CANCER</option>
+<option>CRAB, DEEPSEA GOLDEN</option>
+<option>CRAB, DEEPSEA RED</option>
+<option>CRAB, DUNGENESS</option>
+<option>CRAB, FLORIDA STONE CLAWS</option>
+<option>CRAB, GOLDEN KING</option>
+<option>CRAB, GREEN</option>
+<option>CRAB, HAIR</option>
+<option>CRAB, HORSESHOE</option>
+<option>CRAB, JONAH</option>
+<option>CRAB, KING</option>
+<option>CRAB, RED PA</option>
+<option>CRAB, RED ROCK</option>
+<option>CRAB, SNOW</option>
+<option>CRAB, SNOW/TANNER</option>
+<option>CRAB, SOUTHERN TANNER</option>
+<option>CRAB, SPIDER</option>
+<option>CRABS </option>
+<option>CRAPPIE</option>
+<option>CRAYFISHES OR CRAWFISHES</option>
+<option>CREOLE-FISH</option>
+<option>CRIMSON ROVER</option>
+<option>CROAKER, ATLANTIC</option>
+<option>CROAKER, BLACK</option>
+<option>CROAKER, PACIFIC WHITE</option>
+<option>CROAKER, SPOTFIN</option>
+<option>CROAKER, YELLOWFIN</option>
+<option>CUNNER</option>
+<option>CUSK</option>
+<option>CUSK-EELS</option>
+<option>CUTLASSFISH, ATLANTIC</option>
+<option>CUTTLEFISHES</option>
+<option>DEALFISH</option>
+<option>DOLLY VARDEN</option>
+<option>DOLPHINFISH</option>
+<option>DORY, AMERICAN JOHN</option>
+<option>DRUM, BLACK</option>
+<option>DRUM, FRESHWATER</option>
+<option>DRUM, RED</option>
+<option>DRUM,BANDED</option>
+<option>DRUMS</option>
+<option>ECHINODERM</option>
+<option>EEL, AMERICAN</option>
+<option>EEL, CONGER</option>
+<option>EEL, MORAYS</option>
+<option>EELS</option>
+<option>EELS, CONGER</option>
+<option>EELS, SNAKE</option>
+<option>EMPERORS</option>
+<option>ESCOLAR</option>
+<option>FINFISHES, ANADROMUS</option>
+<option>FINFISHES, FW, OTHER</option>
+<option>FINFISHES, GROUNDFISHES, OTHER</option>
+<option>FINFISHES, MARINE, ORNAMENTAL</option>
+<option>FINFISHES, MARINE, OTHER</option>
+<option>FINFISHES, PELAGIC, OTHER</option>
+<option>FINFISHES, UNC BAIT AND ANIMAL FOOD</option>
+<option>FINFISHES, UNC FOR FOOD</option>
+<option>FINFISHES, UNC GENERAL</option>
+<option>FINFISHES, UNC SPAWN</option>
+<option>FLATFISH</option>
+<option>FLOUNDER, ARROWTOOTH</option>
+<option>FLOUNDER, FOURSPOT</option>
+<option>FLOUNDER, PACIFIC, SANDDAB</option>
+<option>FLOUNDER, SOUTHERN</option>
+<option>FLOUNDER, STARRY</option>
+<option>FLOUNDER, SUMMER</option>
+<option>FLOUNDER, WINDOWPANE</option>
+<option>FLOUNDER, WINTER</option>
+<option>FLOUNDER, WITCH</option>
+<option>FLOUNDER, YELLOWTAIL</option>
+<option>FLOUNDER,ATLANTIC,PLAICE</option>
+<option>FLOUNDER,PACIFIC,SANDDAB</option>
+<option>FLOUNDER,PACIFIC,SANDDAB,LONGFIN</option>
+<option>FLOUNDER,PACIFIC,SANDDAB,SPECKLE</option>
+<option>FLOUNDERS, RIGHTEYE</option>
+<option>FLYINGFISHES</option>
+<option>FROGS</option>
+<option>GAG</option>
+<option>GARS</option>
+<option>GLASSEYE SNAPPER</option>
+<option>GOATFISHES</option>
+<option>GOLDFISH</option>
+<option>GOOSEFISH</option>
+<option>GOOSEFISH, BLACKFIN</option>
+<option>GRAYSBY</option>
+<option>GREENLING, KELP</option>
+<option>GREENLINGS</option>
+<option>GRENADIERS</option>
+<option>GROUNDFISH (PROCESSED PRODUCTS ONLY)</option>
+<option>GROUPER, BLACK</option>
+<option>GROUPER, BROOMTAIL</option>
+<option>GROUPER, GOLIATH</option>
+<option>GROUPER, MARBLED</option>
+<option>GROUPER, MISTY</option>
+<option>GROUPER, NASSAU</option>
+<option>GROUPER, RED</option>
+<option>GROUPER, SNOWY</option>
+<option>GROUPER, TIGER</option>
+<option>GROUPER, WARSAW</option>
+<option>GROUPER, YELLOWEDGE</option>
+<option>GROUPER, YELLOWFIN</option>
+<option>GROUPER, YELLOWMOUTH</option>
+<option>GROUPERS</option>
+<option>GRUNT, BLUESTRIPED</option>
+<option>GRUNT, COTTONWICK</option>
+<option>GRUNT, FRENCH</option>
+<option>GRUNT, SAILORS CHOICE</option>
+<option>GRUNT, SMALLMOUTH</option>
+<option>GRUNT, SPANISH</option>
+<option>GRUNT, TOMTATE</option>
+<option>GRUNT, WHITE</option>
+<option>GRUNTS</option>
+<option>GULF SIERRA</option>
+<option>GUNNEL, ROCK</option>
+<option>GUNNELS</option>
+<option>HADDOCK</option>
+<option>HAGFISHES</option>
+<option>HAKE, ATLANTIC, RED/WHITE</option>
+<option>HAKE, BLUE</option>
+<option>HAKE, LONGFIN</option>
+<option>HAKE, OFFSHORE SILVER</option>
+<option>HAKE, PACIFIC (WHITING)</option>
+<option>HAKE, RED</option>
+<option>HAKE, SILVER</option>
+<option>HAKE, SILVER (OFFSHORE MIXED)</option>
+<option>HAKE, SOUTHERN</option>
+<option>HAKE, SPOTTED</option>
+<option>HAKE, WHITE</option>
+<option>HALFMOON</option>
+<option>HALIBUT, ATLANTIC</option>
+<option>HALIBUT, ATLANTIC/PACIFIC</option>
+<option>HALIBUT, CALIFORNIA</option>
+<option>HALIBUT, GREENLAND</option>
+<option>HALIBUT, PACIFIC</option>
+<option>HARVESTFISH</option>
+<option>HERRING, ATLANTIC</option>
+<option>HERRING, ATLANTIC THREAD</option>
+<option>HERRING, BLUEBACK</option>
+<option>HERRING, LAKE OR CISCO</option>
+<option>HERRING, PACIFIC</option>
+<option>HERRING, PACIFIC, ROE ON KELP</option>
+<option>HERRING, ROUND</option>
+<option>HERRING, SEA</option>
+<option>HERRINGS</option>
+<option>HIND, RED</option>
+<option>HIND, ROCK</option>
+<option>HIND, SPECKLED</option>
+<option>HOGCHOKER</option>
+<option>HOGFISH</option>
+<option>HOGFISH,SPANISH</option>
+<option>HOKI</option>
+<option>HOUNDFISH</option>
+<option>INCONNU</option>
+<option>JACK MACKEREL</option>
+<option>JACK, ALMACO</option>
+<option>JACK, BAR</option>
+<option>JACK, BLACK</option>
+<option>JACK, CREVALLE</option>
+<option>JACK, HORSE-EYE</option>
+<option>JACK, YELLOW</option>
+<option>JACKKNIFE-FISH</option>
+<option>JACKS</option>
+<option>JELLYFISH</option>
+<option>JOBFISH, GREEN (UKU)</option>
+<option>KING WHITING</option>
+<option>KINGFISH, NORTHERN</option>
+<option>LADYFISH</option>
+<option>LAMPREY, PACIFIC</option>
+<option>LAMPREY, SEA</option>
+<option>LANCETFISHES</option>
+<option>LAUNCE, AMERICAN SAND</option>
+<option>LEATHER-BACK</option>
+<option>LEATHERJACKET</option>
+<option>LEATHERJACKETS</option>
+<option>LIMPETS</option>
+<option>LINGCOD</option>
+<option>LIONFISH</option>
+<option>LIVE ROCK,ORNAMENTAL AQUACULTURE</option>
+<option>LOBSTER, AMERICAN</option>
+<option>LOBSTER, BANDED SPINY</option>
+<option>LOBSTER, CALIFORNIA SPINY</option>
+<option>LOBSTER, CARIBBEAN SPINY</option>
+<option>LOBSTER, SLIPPER</option>
+<option>LOOKDOWN</option>
+<option>LOUVAR</option>
+<option>LUMPFISH</option>
+<option>MACKEREL (SCOMBER)</option>
+<option>MACKEREL, ATLANTIC</option>
+<option>MACKEREL, BULLET</option>
+<option>MACKEREL, CERO</option>
+<option>MACKEREL, CHUB</option>
+<option>MACKEREL, FRIGATE</option>
+<option>MACKEREL, KING</option>
+<option>MACKEREL, KING AND CERO</option>
+<option>MACKEREL, SPANISH</option>
+<option>MAMMALS, AQUATIC</option>
+<option>MANTAS</option>
+<option>MANTIS SHRIMPS</option>
+<option>MARGATE</option>
+<option>MARINE WORM</option>
+<option>MARLIN, BLACK</option>
+<option>MARLIN, BLUE</option>
+<option>MARLIN, STRIPED</option>
+<option>MARLIN, WHITE</option>
+<option>MENHADEN</option>
+<option>MILKFISH</option>
+<option>MINNOW, HARDHEAD</option>
+<option>MINNOW, HITCH</option>
+<option>MINNOW, SACRAMENTO SQUAWFISH</option>
+<option>MOJARRAS</option>
+<option>MOLA, SHARPTAIL</option>
+<option>MOLLUSKS</option>
+<option>MOONEYES</option>
+<option>MOONFISH, ATLANTIC</option>
+<option>MORAY, CALIFORNIA</option>
+<option>MUDSUCKER, LONGJAW</option>
+<option>MULLET, STRIPED (LIZA)</option>
+<option>MULLET, WHITE</option>
+<option>MULLETS</option>
+<option>MUMMICHOG</option>
+<option>MUSSEL, BLUE</option>
+<option>MUSSEL, CALIFORNIA</option>
+<option>MUSSELS, FW</option>
+<option>NEEDLEFISH, ATLANTIC</option>
+<option>NILE PERCH</option>
+<option>OCEAN SUNFISH</option>
+<option>OCTOPUS</option>
+<option>OILFISH</option>
+<option>OPAH</option>
+<option>OPALEYE</option>
+<option>OYSTER, EASTERN</option>
+<option>OYSTER, EASTERN </option>
+<option>OYSTER, EUROPEAN FLAT</option>
+<option>OYSTER, KUMAMOTO</option>
+<option>OYSTER, MANGROVE</option>
+<option>OYSTER, OLYMPIA</option>
+<option>OYSTER, PACIFIC</option>
+<option>OYSTER, SUMINOE</option>
+<option>PACIFIC SIERRA</option>
+<option>PADDLEFISH</option>
+<option>PARROTFISHES</option>
+<option>PATAGONIAN TOOTHFISH</option>
+<option>PERCH, BLACK</option>
+<option>PERCH, DWARF</option>
+<option>PERCH, PILE</option>
+<option>PERCH, SHINER</option>
+<option>PERCH, WHITE</option>
+<option>PERCH, YELLOW</option>
+<option>PERIWINKLES</option>
+<option>PERMIT</option>
+<option>PIGFISH</option>
+<option>PIKE, BLUE</option>
+<option>PIKES</option>
+<option>PILOTFISH</option>
+<option>PINFISH</option>
+<option>PINFISH, SPOTTAIL</option>
+<option>POLLOCK</option>
+<option>POLLOCK, WALLEYE</option>
+<option>POMFRETS</option>
+<option>POMPANO, AFRICAN</option>
+<option>POMPANO, FLORIDA</option>
+<option>POMPANO, PACIFIC</option>
+<option>PORGY, JOLTHEAD</option>
+<option>PORGY, KNOBBED</option>
+<option>PORGY, LITTLEHEAD</option>
+<option>PORGY, LONGSPINE</option>
+<option>PORGY, RED</option>
+<option>PORGY, SAUCEREYE</option>
+<option>PORGY, WHITEBONE</option>
+<option>PORGY,GRASS</option>
+<option>PORKFISH</option>
+<option>POUT, OCEAN</option>
+<option>PRICKLEBACK, MONKEYFACE</option>
+<option>PUDDINGWIFE (WRASSE)</option>
+<option>PUFFER, NOTHERN</option>
+<option>PUFFERS</option>
+<option>QUEENFISH</option>
+<option>QUILLBACK</option>
+<option>RATFISH SPOTTED</option>
+<option>RAY, BAT</option>
+<option>RAY, BULLNOSE</option>
+<option>RAY, EAGLE</option>
+<option>RAY, MANTA</option>
+<option>RAY, PACIFIC ELECTRIC</option>
+<option>RAY,COWNOSE</option>
+<option>RAY,PELAGIC STINGRAY</option>
+<option>RAY,STINGRAYS</option>
+<option>RAYS</option>
+<option>REDFISH, ACADIAN</option>
+<option>REMORA</option>
+<option>ROCK BASSES, PACIFIC</option>
+<option>ROCKFISH, AURORA</option>
+<option>ROCKFISH, BANK</option>
+<option>ROCKFISH, BLACK</option>
+<option>ROCKFISH, BLACK-AND-YELLOW</option>
+<option>ROCKFISH, BLACKGILL</option>
+<option>ROCKFISH, BLUE</option>
+<option>ROCKFISH, BOCACCIO</option>
+<option>ROCKFISH, BRONZESPOTTED</option>
+<option>ROCKFISH, BROWN</option>
+<option>ROCKFISH, CALICO</option>
+<option>ROCKFISH, CANARY</option>
+<option>ROCKFISH, CHAMELEON</option>
+<option>ROCKFISH, CHILIPEPPER</option>
+<option>ROCKFISH, CHINA</option>
+<option>ROCKFISH, COPPER</option>
+<option>ROCKFISH, COWCOD</option>
+<option>ROCKFISH, DARKBLOTCHED</option>
+<option>ROCKFISH, FLAG</option>
+<option>ROCKFISH, GOPHER</option>
+<option>ROCKFISH, GRASS</option>
+<option>ROCKFISH, GREENBLOTCHED</option>
+<option>ROCKFISH, GREENSPOTTED</option>
+<option>ROCKFISH, GREENSTRIPED</option>
+<option>ROCKFISH, HONEYCOMB</option>
+<option>ROCKFISH, KELP</option>
+<option>ROCKFISH, OLIVE</option>
+<option>ROCKFISH, PACIFIC OCEAN PERCH</option>
+<option>ROCKFISH, PINK</option>
+<option>ROCKFISH, PINKROSE</option>
+<option>ROCKFISH, REDBANDED</option>
+<option>ROCKFISH, REDSTRIPE</option>
+<option>ROCKFISH, ROSY</option>
+<option>ROCKFISH, SHARPCHIN</option>
+<option>ROCKFISH, SHORTBELLY</option>
+<option>ROCKFISH, SILVERGRAY</option>
+<option>ROCKFISH, SPECKLED</option>
+<option>ROCKFISH, SPLITNOSE</option>
+<option>ROCKFISH, SQUARESPOT</option>
+<option>ROCKFISH, STARRY</option>
+<option>ROCKFISH, STRIPETAIL</option>
+<option>ROCKFISH, SWORDSPINE</option>
+<option>ROCKFISH, TREEFISH</option>
+<option>ROCKFISH, VERMILION</option>
+<option>ROCKFISH, WHITEBELLY</option>
+<option>ROCKFISH, WIDOW</option>
+<option>ROCKFISH, YELLOWEYE</option>
+<option>ROCKFISH, YELLOWMOUTH</option>
+<option>ROCKFISH, YELLOWTAIL</option>
+<option>ROCKFISHES</option>
+<option>ROSEFISH, BLACKBELLY</option>
+<option>ROUGHY, BIG</option>
+<option>ROUGHY, ORANGE</option>
+<option>RUDDERFISH, BANDED</option>
+<option>RUNNER, BLUE</option>
+<option>RUNNER, RAINBOW</option>
+<option>SABLEFISH</option>
+<option>SACRAMENTO BLACKFISH</option>
+<option>SAILFISH</option>
+<option>SALMON, ATLANTIC</option>
+<option>SALMON, CHINOOK</option>
+<option>SALMON, CHUM</option>
+<option>SALMON, COHO</option>
+<option>SALMON, PACIFIC</option>
+<option>SALMON, PINK</option>
+<option>SALMON, SOCKEYE</option>
+<option>SAND BASS, BARRED</option>
+<option>SAND BASS, SPOTTED</option>
+<option>SAND PERCH</option>
+<option>SAND PERCH, DWARF</option>
+<option>SANDWORMS</option>
+<option>SARDINE, PACIFIC</option>
+<option>SARDINE, SPANISH</option>
+<option>SAUGER</option>
+<option>SAURIES</option>
+<option>SAURY, ATLANTIC</option>
+<option>SAURY, PACIFIC</option>
+<option>SAWFISH, SMALLTOOTH</option>
+<option>SCAD, BIGEYE</option>
+<option>SCAD, MACKEREL</option>
+<option>SCAD, ROUGH</option>
+<option>SCAD, ROUND</option>
+<option>SCADS</option>
+<option>SCALLOP, BAY</option>
+<option>SCALLOP, CALICO</option>
+<option>SCALLOP, ICELAND</option>
+<option>SCALLOP, SEA</option>
+<option>SCALLOP, SPINY</option>
+<option>SCALLOP, WEATHERVANE</option>
+<option>SCALLOPS</option>
+<option>SCAMP</option>
+<option>SCORPIONFISH, SPINYCHEEK</option>
+<option>SCORPIONFISH, SPOTTED</option>
+<option>SCORPIONFISHES</option>
+<option>SCULPIN, PACIFIC STAGHORN</option>
+<option>SCULPIN, YELLOWCHIN</option>
+<option>SCULPINS</option>
+<option>SCUP</option>
+<option>SCUPS OR PORGIES</option>
+<option>SEA BASS, BANK</option>
+<option>SEA BASS, BLACK</option>
+<option>SEA BASS, GIANT</option>
+<option>SEA BASS, ROCK</option>
+<option>SEA CATFISHES</option>
+<option>SEA CHUBS</option>
+<option>SEA CUCUMBER</option>
+<option>SEA RAVEN</option>
+<option>SEA SQUIRTS</option>
+<option>SEA URCHINS</option>
+<option>SEABASS, WHITE</option>
+<option>SEAL, NORTHERN FUR</option>
+<option>SEAPERCH, PINK</option>
+<option>SEAPERCH, RAINBOW</option>
+<option>SEAPERCH, RUBBERLIP</option>
+<option>SEAPERCH, STRIPED</option>
+<option>SEAPERCH, WHITE</option>
+<option>SEAROBINS</option>
+<option>SEATROUT, SAND</option>
+<option>SEATROUT, SPOTTED</option>
+<option>SEAWEED, IRISH MOSS</option>
+<option>SEAWEED, KELP</option>
+<option>SEAWEED, ROCKWEED</option>
+<option>SEAWEEDS</option>
+<option>SENNET, SOUTHERN</option>
+<option>SHAD, AMERICAN</option>
+<option>SHAD, GIZZARD</option>
+<option>SHAD, HICKORY</option>
+<option>SHAD, THREADFIN</option>
+<option>SHADS (NK)</option>
+<option>SHARK, ATLANTIC ANGEL</option>
+<option>SHARK, ATLANTIC SHARPNOSE</option>
+<option>SHARK, BASKING</option>
+<option>SHARK, BIGEYE SAND TIGER</option>
+<option>SHARK, BIGEYE THRESHER</option>
+<option>SHARK, BIGNOSE</option>
+<option>SHARK, BLACKNOSE</option>
+<option>SHARK, BLACKTIP</option>
+<option>SHARK, BLUE</option>
+<option>SHARK, BONNETHEAD</option>
+<option>SHARK, BROWN SMOOTHHOUND</option>
+<option>SHARK, BULL</option>
+<option>SHARK, CARIBBEAN SHARPNOSE</option>
+<option>SHARK, DOGFISH</option>
+<option>SHARK, DOGFISH COLLARED</option>
+<option>SHARK, DUSKY</option>
+<option>SHARK, FINETOOTH</option>
+<option>SHARK, GALAPAGOS</option>
+<option>SHARK, GRAY SMOOTHHOUND</option>
+<option>SHARK, GREAT HAMMERHEAD</option>
+<option>SHARK, GREENLAND</option>
+<option>SHARK, HAMMERHEAD</option>
+<option>SHARK, HORN</option>
+<option>SHARK, LEMON</option>
+<option>SHARK, LEOPARD</option>
+<option>SHARK, LITTLE GULPER</option>
+<option>SHARK, LONGFIN MAKO</option>
+<option>SHARK, MAKOS</option>
+<option>SHARK, NARROWFIN SMOOTHHOUND</option>
+<option>SHARK, NARROWTHOOTH</option>
+<option>SHARK, NIGHT</option>
+<option>SHARK, NURSE</option>
+<option>SHARK, OCEANIC WHITETIP</option>
+<option>SHARK, PACIFIC ANGEL</option>
+<option>SHARK, PELAGIC THRESHER</option>
+<option>SHARK, PORBEAGLE</option>
+<option>SHARK, REEF</option>
+<option>SHARK, REQUIEM</option>
+<option>SHARK, SALMON</option>
+<option>SHARK, SAND TIGER</option>
+<option>SHARK, SANDBAR</option>
+<option>SHARK, SCALLOPED HAMMERHEAD</option>
+<option>SHARK, SEVENGILL</option>
+<option>SHARK, SHARPENOSE SEVENGILL</option>
+<option>SHARK, SHORTFIN MAKO</option>
+<option>SHARK, SILKY</option>
+<option>SHARK, SIXGILL</option>
+<option>SHARK, SIXGILL BIGEYE</option>
+<option>SHARK, SMALLTAIL</option>
+<option>SHARK, SMOOTH DOGFISH</option>
+<option>SHARK, SMOOTH HAMMERHEAD</option>
+<option>SHARK, SOUPFIN</option>
+<option>SHARK, SPINNER</option>
+<option>SHARK, SPINY DOGFISH</option>
+<option>SHARK, SWELL</option>
+<option>SHARK, THRESHER</option>
+<option>SHARK, TIGER</option>
+<option>SHARK, WHALE</option>
+<option>SHARK, WHITE</option>
+<option>SHARK,CROCODILE</option>
+<option>SHARKS</option>
+<option>SHARKS, COW</option>
+<option>SHARKS, MACKEREL</option>
+<option>SHEEPHEAD, CALIFORNIA</option>
+<option>SHEEPSHEAD</option>
+<option>SHELLFISH</option>
+<option>SHELLFISH,UNCLASSIFIED,MARINE,ORNAMENTAL</option>
+<option>SHRIMP, BAY</option>
+<option>SHRIMP, BLUE MUD</option>
+<option>SHRIMP, BRINE</option>
+<option>SHRIMP, BROWN</option>
+<option>SHRIMP, COONSTRIPE</option>
+<option>SHRIMP, FW </option>
+<option>SHRIMP, GHOST</option>
+<option>SHRIMP, MARINE, OTHER</option>
+<option>SHRIMP, OCEAN</option>
+<option>SHRIMP, PACIFIC ROCK</option>
+<option>SHRIMP, PENAEID</option>
+<option>SHRIMP, PENAEID, AQUACULTURE</option>
+<option>SHRIMP, PINK</option>
+<option>SHRIMP, PINK-SPECKLED</option>
+<option>SHRIMP, PINKSPOT</option>
+<option>SHRIMP, ROCK</option>
+<option>SHRIMP, ROYAL RED</option>
+<option>SHRIMP, SCARLET</option>
+<option>SHRIMP, SEABOB</option>
+<option>SHRIMP, SIDESTRIPE</option>
+<option>SHRIMP, SPOT</option>
+<option>SHRIMP, WHITE</option>
+<option>SHRIMP,ATLANTIC & GULF,ROUGHNECK</option>
+<option>SHRIMP,PANDALID</option>
+<option>SILVERSIDES</option>
+<option>SKATE, BARNDOOR</option>
+<option>SKATE, BIG</option>
+<option>SKATE, CALIFORNIA</option>
+<option>SKATE, LITTLE</option>
+<option>SKATES</option>
+<option>SKATES, LITTLE/WINTER MX</option>
+<option>SKIPPERS</option>
+<option>SMELT, EULACHON</option>
+<option>SMELT, NIGHT</option>
+<option>SMELT, RAINBOW</option>
+<option>SMELT, SURF</option>
+<option>SMELT, WHITEBAIT</option>
+<option>SMELTS</option>
+<option>SNAIL, MOON</option>
+<option>SNAIL, SLIPPER LIMPET</option>
+<option>SNAILS (CONCHS)</option>
+<option>SNAKE MACKEREL</option>
+<option>SNAKEHEAD, NORTHERN</option>
+<option>SNAPPER CARIBBEAN RED</option>
+<option>SNAPPER, BLACK</option>
+<option>SNAPPER, BLACKFIN</option>
+<option>SNAPPER, CARDINAL</option>
+<option>SNAPPER, CUBERA</option>
+<option>SNAPPER, DOG</option>
+<option>SNAPPER, GRAY</option>
+<option>SNAPPER, LANE</option>
+<option>SNAPPER, MAHOGANY</option>
+<option>SNAPPER, MUTTON</option>
+<option>SNAPPER, PRISTIPOMOIDES</option>
+<option>SNAPPER, QUEEN</option>
+<option>SNAPPER, RED</option>
+<option>SNAPPER, SCHOOLMASTER</option>
+<option>SNAPPER, SILK</option>
+<option>SNAPPER, VERMILION</option>
+<option>SNAPPER, YELLOWTAIL</option>
+<option>SNAPPERS</option>
+<option>SNOOK</option>
+<option>SOLE, BIGMOUTH</option>
+<option>SOLE, BUTTER</option>
+<option>SOLE, C-O</option>
+<option>SOLE, CURLFIN</option>
+<option>SOLE, DEEPSEA</option>
+<option>SOLE, DOVER</option>
+<option>SOLE, ENGLISH</option>
+<option>SOLE, FANTAIL</option>
+<option>SOLE, FLATHEAD</option>
+<option>SOLE, PETRALE</option>
+<option>SOLE, REX</option>
+<option>SOLE, ROCK</option>
+<option>SOLE, SAND</option>
+<option>SOLE, SLENDER</option>
+<option>SOLE, YELLOWFIN</option>
+<option>SOLES</option>
+<option>SPADEFISHES</option>
+<option>SPANISH FLAG</option>
+<option>SPEARFISH, LONGBILL</option>
+<option>SPEARFISH, ROUNDSCALE</option>
+<option>SPEARFISHES</option>
+<option>SPLITTAIL</option>
+<option>SPONGE, GLOVE</option>
+<option>SPONGE, GRASS</option>
+<option>SPONGE, SHEEPSWOOL</option>
+<option>SPONGE, WIRE</option>
+<option>SPONGE, YELLOW</option>
+<option>SPONGES</option>
+<option>SPOT</option>
+<option>SPOTTED CABRILLA</option>
+<option>SQUAWFISHES</option>
+<option>SQUID, CALIFORNIA MARKET</option>
+<option>SQUID, JUMBO</option>
+<option>SQUID, LONGFIN</option>
+<option>SQUID, NORTHERN SHORTFIN</option>
+<option>SQUID, ROBUST CLUBHOOK</option>
+<option>SQUIDS</option>
+<option>SQUIRRELFISHES</option>
+<option>STARFISH</option>
+<option>STARGAZER, NOTHERN</option>
+<option>STURGEON, ATLANTIC</option>
+<option>STURGEON, GREEN</option>
+<option>STURGEON, SHORTNOSE</option>
+<option>STURGEON, SHOVELNOSE</option>
+<option>STURGEON, WHITE</option>
+<option>STURGEONS</option>
+<option>SUCKERS</option>
+<option>SUNFISHES</option>
+<option>SURFPERCH, BARRED</option>
+<option>SURFPERCH, CALICO</option>
+<option>SURFPERCH, REDTAIL</option>
+<option>SURFPERCH, SILVER</option>
+<option>SURFPERCH, WALLEYE</option>
+<option>SURFPERCHES</option>
+<option>SURGEONFISHES</option>
+<option>SWORDFISH</option>
+<option>TARPON</option>
+<option>TARPON, HAWAIIAN</option>
+<option>TAUTOG</option>
+<option>THORNBACK</option>
+<option>THORNYHEAD, LONGSPINE</option>
+<option>THORNYHEAD, SHORTSPINE</option>
+<option>THREADFINS</option>
+<option>THRESHER SHARKS</option>
+<option>TILAPIAS</option>
+<option>TILEFISH, ANCHOR</option>
+<option>TILEFISH, BLACKLINE</option>
+<option>TILEFISH, BLUELINE</option>
+<option>TILEFISH, GOLDEN</option>
+<option>TILEFISH, GOLDFACE</option>
+<option>TILEFISH, SAND</option>
+<option>TILEFISHES</option>
+<option>TILFISH, GOLDFACE</option>
+<option>TOADFISHES</option>
+<option>TOMCOD, ATLANTIC</option>
+<option>TOMCOD, PACIFIC</option>
+<option>TONGUEFISH, CALIFORNIA</option>
+<option>TOPSNAIL, WEST INDIAN</option>
+<option>TOTOABA</option>
+<option>TRIGGERFISH, GRAY</option>
+<option>TRIGGERFISH, OCEAN</option>
+<option>TRIGGERFISH, QUEEN</option>
+<option>TRIPLETAIL</option>
+<option>TROUT, BROOK</option>
+<option>TROUT, BROWN</option>
+<option>TROUT, CUTTHROAT</option>
+<option>TROUT, LAKE</option>
+<option>TROUT, RAINBOW</option>
+<option>TROUTS</option>
+<option>TUNA, ALBACORE</option>
+<option>TUNA, BIGEYE</option>
+<option>TUNA, BLACK SKIPJACK</option>
+<option>TUNA, BLACKFIN</option>
+<option>TUNA, BLUEFIN</option>
+<option>TUNA, BLUEFIN PACIFIC</option>
+<option>TUNA, KAWAKAWA</option>
+<option>TUNA, LITTLE TUNNY</option>
+<option>TUNA, LONGTAIL</option>
+<option>TUNA, SKIPJACK</option>
+<option>TUNA, YELLOWFIN</option>
+<option>TUNAS</option>
+<option>TURBOT, DIAMOND</option>
+<option>TURBOT, HORNYHEAD</option>
+<option>TURBOT, SPOTTED</option>
+<option>TURTLE, GREEN SEA</option>
+<option>TURTLE, HAWKSBILL SEA</option>
+<option>TURTLE, KEMP'S RIDLEY</option>
+<option>TURTLE, LEATHERBACK</option>
+<option>TURTLE, LOGGERHEAD SEA</option>
+<option>TURTLE, SLIDERS</option>
+<option>TURTLE, SNAPPING</option>
+<option>TURTLE, SOFT-SHELL</option>
+<option>TURTLE, TERRAPIN</option>
+<option>TURTLES</option>
+<option>TURTLES, BABY (YOUNG FW)</option>
+<option>WAHOO</option>
+<option>WALLEYE</option>
+<option>WEAKFISH</option>
+<option>WENCHMAN</option>
+<option>WHALES</option>
+<option>WHELK, CHANNELED</option>
+<option>WHELK, KNOBBED</option>
+<option>WHELK, LIGHTNING</option>
+<option>WHITEFISH, LAKE</option>
+<option>WHITEFISH, OCEAN</option>
+<option>WHITEFISH, ROUND</option>
+<option>WOLF-EEL</option>
+<option>WOLFFISH, ATLANTIC</option>
+<option>WRECKFISH</option>
+<option>YELLOWTAIL JACK</option>
+</select>
+<input type="SUBMIT" name="qreturn" value="Return"></p>
+</form>
+</body>
+</html>
