@@ -2,7 +2,7 @@
         
 import re
 
-new_data = open("new_data.txt", 'w')
+clean_data = open("cleaned_species_methods.txt", 'w')
 with open("organized_data.txt") as data:
     for line in data:
         fields = line.split('\t')
@@ -19,11 +19,17 @@ with open("organized_data.txt") as data:
         fields[1] = re.sub(r'(JACK MACKEREL|MACKEREL \(SCOMBER\))', r'MACKEREL', fields[1]) 
         fields[1] = re.sub(r'(SEABASS)', r'SEA BASS', fields[1]) 
         fields[2] = re.sub(r'(\w+),\s(\w+)(\s{0,1})', r'\1', fields[2])
+        fields[2] = re.sub(r'(Bag Nets|Cast Nets|Dip Nets|Encircling Nets \(Purse\)|Entangling Nets \(Gill\) Unspc|Fyke and Hoop Nets|Trammel Nets|Lampara \& Ring Nets|Purse Seines|Haul Seines)', r'Nets', fields[2]) 
+        fields[2] = re.sub(r'(Beam Trawls|Trawls|Otter Trawl Bottom|Otter Trawl Midwater|Netstrawl)', r'Trawls', fields[2]) 
+        fields[2] = re.sub(r'(Dredge Clam|Dredge Other|Dredge Oyster|Dredge Scallop)', r'Dredge', fields[2])
+        fields[2] = re.sub(r'(Gill Nets|Gill Nets, Barracuda|Gill Nets, Other|Gill Nets, Salmon|Gill Nets, Sea Bass|Gill NetsHalibut)', r'Gill Nets', fields[2])
+        fields[2] = re.sub(r'(Pots|Pots And Traps|Pots And Traps\(frhwa\)|Pots And Traps, Dungens|Pots And Traps, King|Pots And Traps, Other|Pots And TrapsLobster)', r'Pots and Traps', fields[2])
+        fields[2] = re.sub(r'(Lines Hand|Lines Jigging Machine|Lines Long Set With Hooks|Lines Power Troll Other|Lines Troll|Troll \& Hand Lines Cmb)', r'Lines', fields[2])
         fields[3] = re.sub(r',', r'', fields[3])
         fields[4] = re.sub(r',', r'', fields[4])
         fields[5] = re.sub(r',', r'', fields[5])
         newline = '\t'.join(fields)
-        new_data.write(newline)
+        clean_data.write(newline)
 
 
 
