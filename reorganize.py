@@ -16,17 +16,25 @@ def fix_my_data():
     fixed = re.sub(r'"(\d+)","(.*?)","(.*?)","\s+([\d\.\,]+)","\s+([\d\.,]+)","\s+([\d\.\,]+)"', r'\1\t\2\t\3\t\4\t\5\t\6', str(data_set))
     #send output to new file
     clean_data.write(fixed + '\n')  
+    #close opened file
     clean_data.close()
 
 
 #run function
 fix_my_data()
 
+#new function to fix the first line
 def fix_1st_line():
+    #open organized_data.txt 
     data_set = open("organized_data.txt")
+    #read the file
     unfix = data_set.read()
+    #use regex to fix the spacing of the header line
     fix_1st = re.sub(r'"(\w+)","(\w+)","(\w+)","(\w+\s\w+)","(\w+)","(\$)"',r'\1\t\2\t\3\t\4\t\5\t\6', str(unfix))
+    #reopen the file
     clean_data  = open('organized_data.txt', 'w')
+    #write the new line to the file
     clean_data.write(fix_1st + '\n')
 
+#run the function
 fix_1st_line()
