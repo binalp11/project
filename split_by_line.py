@@ -8,7 +8,7 @@ clean_data = open("cleaned_species_methods.txt", 'w')
 #function that cleans the data
 def clean_my_data():
     #with the organized_data.txt open
-    with open("organized_data.txt") as data:
+    with open("organized_data2.txt") as data:
         #go through the for loop for each line 
         for line in data:
             #split the line up into a list, so that each column is now an item and can be searched individually
