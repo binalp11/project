@@ -56,5 +56,5 @@ import pexpect
 #spawn a shell prompt
 child = pexpect.spawn('/bin/bash')
 #remove everything after line 16698
-child.sendline("head -n+16698 cleaned_species_methods.txt > cleaned_species_methods2.txt")
+child.sendline("head -n+16698 cleaned_species_methods.txt > final_data.txt")
 
