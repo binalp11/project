@@ -12,7 +12,8 @@ def clean_my_data():
         #go through the for loop for each line 
         for line in data:
             #split the line up into a list, so that each column is now an item and can be searched individually
-            fields = line.split('\t')
+            fields = []
+            fields = re.split(r"\*\*", line)
             #removes anything after a comma in the first field, the species name
             fields[1] = re.sub(r'(\w+),\s(\w+)(\s{0,1})(\w+){0,1}', r'\1',fields[1])
             #lines 18-29 does a regex search and replace for the species field
@@ -45,5 +46,15 @@ def clean_my_data():
             #writes that new line to the new file
             clean_data.write(newline)
 
+#run the function 2x
+clean_my_data()
+clean_my_data()
 
+import pexpect
+
+
+#spawn a shell prompt
+child = pexpect.spawn('/bin/bash')
+#remove everything after line 16698
+child.sendline("head -n+16698 cleaned_species_methods.txt > cleaned_species_methods2.txt")
 
