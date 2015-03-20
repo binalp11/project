@@ -38,3 +38,13 @@ def fix_1st_line():
 
 #run the function
 fix_1st_line()
+
+
+
+import pexpect
+
+#spawn a shell prompt
+child = pexpect.spawn('/bin/bash')
+#remove everything after line 16699 to avoid error in split_by_line.py
+child.sendline("head -n+16699 organized_data.txt > organized_data2.txt")
+
