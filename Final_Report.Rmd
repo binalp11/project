@@ -1,0 +1,81 @@
+---
+title: "Final Report"
+author: "Binal Patel"
+date: "3/20/2015"
+output: html_document
+---
+
+## Manipulating and Plotting Fisheries Data From NOAA
+
+###[Binal's Final Project Github repository](https://github.com/binalp11/project) 
+
+### Background
+The goal of this project is to grab data from the NOAA -Commercial Fisheries Statistics Website, clean it up, and make visuals that are easy to interpret.
+
+- With the graphs we will be able to see:
+    
+    - How have the weight in landings of different species changed over the years
+    _ How have the use of methods changed over the years
+    - What factor does El Niño have on fisheries in California
+    
+###Using the scripts
+- To use the python scripts, they can be ran in ipython or python. (Can just copy and paste ENTIRE scripts into ipython)
+- To use the R script, can just copy and paste into R. (Make sure set to correct working directory)
+
+![workflow](/home/vagrant/project/workflow.png)
+
+- To see a list of the files associated with this project after all the scripts are ran, see the File_outputs folder in the github repository 
+
+
+###Getting the Data Set
+
+- The script to get the data set is called **"species_data.py"**
+- This script uses a pexpect subprocess to grab the data file from the NOAA website using a curl command in the shell
+- It also has a few lines that removes the header lines from the data set
+- The data set includes the year(1950 to 2013), species, method of fishing, metric tons, pounds, and value, resulting in over 16,000 lines of information 
+
+###Fixing the spacing
+
+- The data set initially has very unorganized spacing. 
+- The script **"reorganize.py"** fixes the space by removing the variable spaces and replacing them with the delimiter, **, using regular expressions.
+- For some reason, after running the functions to fix the spacing there is extra lines added to the file which creates problems later. Therefore, at the end of this script, I use a subprocess to the shell to remove the everything after the last line of data.
+
+
+###Simplfying the data
+- Initially the data was very inconsistent.
+    - The species were sometimes plural or sometimes too specific: ABALONES vs ABALONE or HALIBUT, CALIFORNIA vs HALIBUT, PACIFIC
+    - The methods were also to specific: Diving Outfits, Abalone vs Diving Outfits, Mackerel 
+    
+- To fix this I wrote **"split_by_line.py"**. 
+- This script has a function that splits each line of the data into a list. This allows me to individually fix each column
+- There is a series of regular expression find and replace lines. In order for me to do this, I had to manually make sure that there all of the inconsistencies were fixed. 
+- I also removed all the commas from the numeric values, so it is not difficult to convert this file into a CSV file for R
+- For some odd reason, the function likes to cut off the last 60 lines when ran once. But if you run the script on more time, it picks up where it left off and add the lines to the file again.
+    - To fix this, I just ran the function twice, and removed all the lines after 16699 (because that is how many lines there is) using a shell subprocesss. 
+    
+###Converting from txt to csv
+- In order to use this data in R, I had to convert my txt file into a csv file
+- **"txt_to_csv.py"** has a function where you input the txt file name and the csv file output, and it converts it for you.
+
+###Summerizing and plotting the results
+- To plot the data I created to functions in **"Graphs_code.R"
+- In this script there are two functions, one that graphs the species and one that graphs the methods
+- The functions either accept the species name or the method, and save the plot as a png file to the working directory. 
+- The plots are line graphs, and have red transparent polygons to shade the El Nino years.
+
+Here are a few of the example plots:
+
+![TUNA](/home/vagrant/project/TUNA .png)
+![SARDINE](/home/vagrant/project/SARDINE .png)
+![SOLE](/home/vagrant/project/SOLE .png)
+
+![Nets](/home/vagrant/project/Nets .png)
+![Lines](/home/vagrant/project/Lines .png)
+
+
+
+
+
+
+
+
