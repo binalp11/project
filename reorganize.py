@@ -13,7 +13,7 @@ def fix_my_data():
     #open data set
     data_set = open("data_w_o_header.txt").read()
     #use regex to fix spacing between columns
-    fixed = re.sub(r'"(\d+)","(.*?)","(.*?)","\s+([\d\.\,]+)","\s+([\d\.,]+)","\s+([\d\.\,]+)"', r'\1\t\2\t\3\t\4\t\5\t\6', str(data_set))
+    fixed = re.sub(r'"(\d+)","(.*?)","(.*?)","\s+([\d\.\,]+)","\s+([\d\.,]+)","\s+([\d\.\,]+)"', r'\1**\2**\3**\4**\5**\6', str(data_set))
     #send output to new file
     clean_data.write(fixed + '\n')  
     #close opened file
@@ -30,7 +30,7 @@ def fix_1st_line():
     #read the file
     unfix = data_set.read()
     #use regex to fix the spacing of the header line
-    fix_1st = re.sub(r'"(\w+)","(\w+)","(\w+)","(\w+\s\w+)","(\w+)","(\$)"',r'\1\t\2\t\3\t\4\t\5\t\6', str(unfix))
+    fix_1st = re.sub(r'"(\w+)","(\w+)","(\w+)","(\w+\s\w+)","(\w+)","(\$)"',r'\1**\2**\3**\4**\5**\6', str(unfix))
     #reopen the file
     clean_data  = open('organized_data.txt', 'w')
     #write the new line to the file
