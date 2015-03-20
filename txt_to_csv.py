@@ -16,4 +16,4 @@ def convertocsv(txtname, csvname):
     out_csv.writerows(in_txt)
 
 #runs the file for the files in my project
-convertocsv("cleaned_species_methods.txt", "final_data.csv")
+convertocsv("final_data.txt", "final_data.csv")
